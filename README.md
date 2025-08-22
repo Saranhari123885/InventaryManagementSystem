@@ -1,3 +1,5 @@
+# Inventory Management System
+
 Inventory Management System
 
 ---
@@ -28,8 +30,63 @@ It provides a user-friendly dashboard with inventory statistics, low-stock alert
 
 ```
 
+## 🏗️ Project Structure
 
-![WhatsApp Image 2025-08-21 at 23 05 44_02ddaa68](https://github.com/user-attachments/assets/15784473-5e02-49a8-865a-7d85ff6d2d99)
+```
+InventoryManagementSystem/
+│── README.md
+│── .gitignore
+│── docker-compose.yml          # (Optional if you want DB + backend + frontend in Docker)
+│
+├── frontend/                   # React + Vite + Tailwind (UI part)
+│   │── package.json
+│   │── vite.config.ts
+│   │── tailwind.config.js
+│   │── tsconfig.json
+│   │── index.html
+│   │
+│   ├── src/
+│   │   ├── main.tsx
+│   │   ├── App.tsx
+│   │   ├── components/
+│   │   │   ├── Dashboard.tsx
+│   │   │   ├── ProductList.tsx
+│   │   │   ├── AddProduct.tsx
+│   │   │   ├── EditProduct.tsx
+│   │   │   ├── BarcodeScanner.tsx
+│   │   │   └── Analytics.tsx
+│   │   ├── assets/             # images, icons, styles
+│   │   └── services/           # API calls to backend
+│   │       └── api.ts
+│   │
+│   └── public/                 # static files (favicon, logos, etc.)
+│
+├── backend/                    # Java Spring Boot (API + DB logic)
+│   │── pom.xml
+│   │── src/
+│   │   ├── main/java/com/inventory/
+│   │   │   ├── InventoryManagementApplication.java
+│   │   │   ├── controller/
+│   │   │   │   └── ProductController.java
+│   │   │   ├── model/
+│   │   │   │   └── Product.java
+│   │   │   ├── repository/
+│   │   │   │   └── ProductRepository.java
+│   │   │   ├── service/
+│   │   │   │   └── ProductService.java
+│   │   │   └── config/         # (if DB configs / CORS needed)
+│   │   └── main/resources/
+│   │       ├── application.properties  # DB, server config
+│   │       └── static/         # (optional frontend build if served from Spring Boot)
+│   │
+│   └── src/test/java/com/inventory/   # JUnit tests
+│
+└── database/                   # Database migrations
+    └── migrations/
+        └── 20250820105450_sweet_villa.sql
+```
+
+---
 
 
 ## 🚀 Getting Started  
