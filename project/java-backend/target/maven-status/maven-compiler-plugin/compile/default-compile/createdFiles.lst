@@ -1,0 +1,11 @@
+com\inventory\controller\ProductController$UpdateStockRequest.class
+com\inventory\service\ProductService.class
+com\inventory\repository\ProductRepository.class
+com\inventory\config\WebConfig.class
+com\inventory\controller\ProductController.class
+com\inventory\controller\ProductController$MessageResponse.class
+com\inventory\model\Product.class
+com\inventory\controller\ProductController$ErrorResponse.class
+com\inventory\InventoryManagementApplication$1.class
+com\inventory\service\ProductService$InventoryStats.class
+com\inventory\InventoryManagementApplication.class
